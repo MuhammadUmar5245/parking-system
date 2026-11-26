@@ -1,0 +1,8 @@
+DirectoryIndex index.php
+Options -Indexes
+
+# Protect config folder from direct access
+<FilesMatch "\.(sql)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
